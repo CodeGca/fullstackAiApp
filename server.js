@@ -28,6 +28,20 @@ async function connect(){
 }
 connect();
 
+// const userSchema = new mongoose.Schema({
+//     username: String,
+//     password: String,
+// });
+// const User = mongoose.model('User', userSchema);
+// const user = new User({
+//     username: 'jack',
+//     password: '12345'
+// })
+// user.save((error)=>{
+//     if(error) throw error;
+//     console.log('New user has been saved to the database successfully')
+// })
+
 app.get('/', (req, res) => {
     res.send('Welcome to the game app!');
 });
