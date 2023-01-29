@@ -19,6 +19,8 @@
   "homepage": "https://github.com/CodeGca/fullstackAiApp#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^6.9.0"
+    "mongoose": "^6.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
