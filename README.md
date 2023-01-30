@@ -7,6 +7,7 @@ npm i express
 touch server.js
 
 npm install mongoose
+npm i cor
 
 # front end
 npm i react react-dom 

@@ -17,7 +17,7 @@ function App() {
   }
   const handleSubmit =(event)=>{
     event.preventDefault();
-    axios.post('http://localhost:3000', {username, password})
+    axios.post('http://localhost:3000/', {username, password})
     .then((response)=>{
       console.log(response)
     }).catch((error)=>{
