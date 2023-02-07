@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import WelcomePage from './Welcome';
 import axios from 'axios'
 import { useState } from 'react';
 
 
-function App() {
+function App(props) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const handleUsernameChange =(event)=>{
@@ -28,7 +29,8 @@ function App() {
   
   return (
     <div className="App">
-      <h1>Welcome to the game.</h1>
+      {/* <h1>Welcome to the game.</h1> */}
+      < WelcomePage {...props} username={username}/>
       <form onSubmit={handleSubmit}>
         <label>
           Username:
